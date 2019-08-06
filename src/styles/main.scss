@@ -1,0 +1,46 @@
+@import "./fonts";
+@import "./variables";
+@import "./bootstrap";
+
+body {
+    background-image: url(../images/website-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top center;
+}
+
+.bg-acrylic {
+    -webkit-backdrop-filter: blur(10px) saturate(180%);
+    backdrop-filter: blur(10px) saturate(180%);
+    background-color: rgba(white,.15);
+}
+
+.App > .row > div {
+    height: 100vh;
+}
+
+.tabs-nav {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    display: flex;
+}
+
+.tabs-nav-item {
+    padding: $spacer;
+    text-align: center;
+
+    &:not(.active) {
+        .tabs-nav-item-icon-filled {
+            display: none;
+        }
+    }
+
+    &.active {
+        .tabs-nav-item-icon-outlined {
+            display: none;
+        }
+    }
+}
