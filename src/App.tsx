@@ -40,11 +40,15 @@ function App() {
         basename = "et-design";
     }
 
+    window.addEventListener("scroll", (event) => {
+        console.log(event);
+    });
+
     return (
         <Router basename={basename}>
             <div className="App container-fluid">
                 <div className="row">
-                    <div className="d-none d-md-block col-sm-2 col-md-3 bg-acrylic pt-3">
+                    <div className="d-none d-md-block col-md-3 bg-acrylic pt-3 position-fixed">
                         <div className="offset-lg-3">
                             <img src={require("./images/logo.svg")} alt="EasyTrade.bet" className="mx-3 mt-4 mb-3" style={{ maxWidth: "160px" }} />
 
@@ -64,18 +68,8 @@ function App() {
                         </div>
                     </div>
 
-                    <div className="col-sm-10 col-md-9 pt-3 bg-main">
+                    <div className="offset-md-3 col-md-9 pt-3 bg-main">
                         <h1 className="display-4 mt-4 mb-3">Design System</h1>
-
-                        <div className="horizontal-scroll">
-                            {[...Array(16)].map(() => (
-                                <div className="bg-primary" style={{
-                                    minWidth: "150px",
-                                    height: "150px",
-                                    border: "2px solid black"
-                                }} />
-                            ))}
-                        </div>
 
 
                         <Route exact path="/" component={HomePage} />

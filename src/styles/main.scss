@@ -21,7 +21,7 @@ body {
 }
 
 .App > .row > div {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .tabs-nav {
@@ -69,6 +69,8 @@ body {
 }
 
 .tabs-nav {
+    background-color: $body-bg;
+
     .et-nav-item {
         text-align: center;
     }
