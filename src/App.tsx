@@ -34,8 +34,14 @@ function App() {
         }
     ];
 
+    let basename;
+
+    if (!(!process.env.NODE_ENV || process.env.NODE_ENV === "development")) {
+        basename = "et-design";
+    }
+
     return (
-        <Router>
+        <Router basename={basename}>
             <div className="App container-fluid">
                 <div className="row">
                     <div className="d-none d-md-block col-sm-2 col-md-3 bg-acrylic pt-3">
@@ -60,6 +66,16 @@ function App() {
 
                     <div className="col-sm-10 col-md-9 pt-3 bg-main">
                         <h1 className="display-4 mt-4 mb-3">Design System</h1>
+
+                        <div className="horizontal-scroll">
+                            {[...Array(16)].map(() => (
+                                <div className="bg-primary" style={{
+                                    minWidth: "100px",
+                                    height: "100px",
+                                    border: "2px solid black"
+                                }} />
+                            ))}
+                        </div>
 
 
                         <Route exact path="/" component={HomePage} />
