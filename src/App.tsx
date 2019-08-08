@@ -70,8 +70,8 @@ function App() {
                         <div className="horizontal-scroll">
                             {[...Array(16)].map(() => (
                                 <div className="bg-primary" style={{
-                                    minWidth: "100px",
-                                    height: "100px",
+                                    minWidth: "150px",
+                                    height: "150px",
                                     border: "2px solid black"
                                 }} />
                             ))}
