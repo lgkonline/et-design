@@ -48,7 +48,7 @@ function App() {
         <Router basename={basename}>
             <div className="App container-fluid">
                 <div className="row">
-                    <div className="d-none d-md-block col-md-3 bg-acrylic pt-3 position-fixed">
+                    <div className="side d-none d-md-block col-md-3 bg-acrylic pt-3 position-fixed">
                         <div className="offset-lg-3">
                             <img src={require("./images/logo.svg")} alt="EasyTrade.bet" className="mx-3 mt-4 mb-3" style={{ maxWidth: "160px" }} />
 
@@ -69,12 +69,14 @@ function App() {
                     </div>
 
                     <div className="offset-md-3 col-md-9 pt-3 bg-main">
-                        <h1 className="display-4 mt-4 mb-3">Design System</h1>
+                        <div className="main">
+                            <h1 className="display-4 mt-4 mb-3">Design System</h1>
 
 
-                        <Route exact path="/" component={HomePage} />
-                        <Route path="/typography" component={TypographyPage} />
-                        <Route path="/cases" component={CasesPage} />
+                            <Route exact path="/" component={HomePage} />
+                            <Route path="/typography" component={TypographyPage} />
+                            <Route path="/cases" component={CasesPage} />
+                        </div>
                     </div>
                 </div>
 

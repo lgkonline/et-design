@@ -7,6 +7,23 @@ body {
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: top center;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+// Optimization for iPhone X*
+.tabs-nav,
+.side,
+.main {
+    padding-bottom: env(safe-area-inset-bottom);
+}
+
+.side {
+    padding-left: env(safe-area-inset-left);
+}
+
+.main {
+    // padding-right: env(safe-area-inset-right);
 }
 
 .bg-acrylic {
