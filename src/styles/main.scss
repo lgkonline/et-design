@@ -23,13 +23,7 @@ body {
     padding-left: env(safe-area-inset-left);
 }
 
-.main {
-    // padding-right: env(safe-area-inset-right);
-}
-
 .bg-acrylic {
-    // -webkit-backdrop-filter: blur(10px) saturate(180%);
-    // backdrop-filter: blur(10px) saturate(180%);
     background-color: rgba(white,.15);
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAEAgMAAADUn3btAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlQTFRFAAAAIh0d////87q3ngAAAAJ0Uk5TADUgIAkbAAAAAWJLR0QCZgt8ZAAAAAlwSFlzAAAASAAAAEgARslrPgAAABBJREFUCNdjCGAIYGBlYAUAA9wAqwPFtesAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTktMDUtMTNUMTc6MTQ6MjMrMDA6MDAfImpwAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE5LTA1LTEzVDE3OjE0OjIzKzAwOjAwbn/SzAAAAABJRU5ErkJggg==);
 }
@@ -38,80 +32,39 @@ body {
     background-image: linear-gradient($body-bg, rgba($body-bg, .0));
 }
 
+// Set this to elements that contain Material icons in SVG
+.svg-current-color {
+    svg {
+        fill: currentColor;
+    }
+}
+
+// Set this to elements that contain links that should be white and not $link-color
+.white-link-area {
+    a, 
+    .btn-link {
+        &, &:hover {
+            color: $white;
+        }
+
+        &:not(.active) {
+            opacity: .7;
+
+            &.disabled,
+            &[disabled] {
+                opacity: .2;
+            }
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+}
+
 .App > .row > div {
     min-height: 100vh;
 }
 
-.tabs-nav {
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
-
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.et-nav-item {
-    padding: $spacer;
-    transition: transform .1s;
-
-    &, &:hover {
-        color: $white;
-    }
-
-    &:hover {
-        text-decoration: none;
-    }
-
-    &:active {
-        transform: scale(.9);
-    }
-
-    &:not(.active) {
-        opacity: .7;
-        &:hover {
-            opacity: 1;
-        }
-
-        .et-nav-item-icon-filled {
-            display: none;
-        }
-    }
-
-    &.active {
-        .et-nav-item-icon-outlined {
-            display: none;
-        }
-    }
-}
-
-.tabs-nav {
-    background-color: $body-bg;
-
-    .et-nav-item {
-        text-align: center;
-    }
-}
-
-.menu-nav {
-    .et-nav-item {
-        display: flex;
-        align-items: center;
-
-        .et-nav-item-label {
-            margin-left: $spacer/2;
-        }
-    }
-}
-
-.horizontal-scroll {
-    display: flex;
-    overflow-x: auto;
-    overflow-y: hidden;
-    -webkit-overflow-scrolling: touch;
-
-    &::-webkit-scrollbar {
-        display: none;
-    }
-}
+@import "./menu";
+@import "./horizontal-scroll";

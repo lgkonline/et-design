@@ -1,0 +1,16 @@
+.horizontal-scroll-body {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.horizontal-scroll-nav {
+    display: flex;
+    justify-content: flex-end;
+}

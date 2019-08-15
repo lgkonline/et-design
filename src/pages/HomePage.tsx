@@ -1,5 +1,7 @@
 import React from "react";
 
+import { HorizontalScroll } from "../components/HorizontalScroll";
+
 export function HomePage() {
     const recentWinnings = [
         {
@@ -43,7 +45,7 @@ export function HomePage() {
         <div>
             <h1 className="mt-4 mb-3">Home</h1>
 
-            <div className="recent-win-list horizontal-scroll mb-3">
+            <HorizontalScroll className="recent-win-list mb-3">
                 {recentWinnings.map((pick, index) =>
                     <div
                         key={index}
@@ -54,9 +56,9 @@ export function HomePage() {
                         <div className="recent-win-skin" style={{ backgroundImage: `url(${pick.skin})` }} />
                     </div>
                 )}
-            </div>
+            </HorizontalScroll>
 
-            <div className="horizontal-scroll mb-3">
+            <HorizontalScroll className="mb-3">
                 {[...Array(16)].map((j, i) => (
                     <div key={i} className="bg-primary" style={{
                         minWidth: "150px",
@@ -64,7 +66,7 @@ export function HomePage() {
                         border: "2px solid black"
                     }} />
                 ))}
-            </div>
+            </HorizontalScroll>
 
             <div className="row">
                 <div className="col-md-6">
