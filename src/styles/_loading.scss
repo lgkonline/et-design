@@ -1,0 +1,8 @@
+.loading {
+    position: fixed;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    min-width: 310px;
+    max-width: 500px;
+}
