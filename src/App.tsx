@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
+import { HashRouter as Router, Route, NavLink } from "react-router-dom";
 
 import { HomePage } from "./pages/HomePage";
 import { LoadingPage } from "./pages/LoadingPage";
@@ -36,11 +36,11 @@ function App() {
         }
     ];
 
-    let basename;
+    // let basename;
 
-    if (!(!process.env.NODE_ENV || process.env.NODE_ENV === "development")) {
-        basename = "et-design";
-    }
+    // if (!(!process.env.NODE_ENV || process.env.NODE_ENV === "development")) {
+    //     basename = "et-design";
+    // }
 
     let previousPosition = window.pageYOffset || document.documentElement.scrollTop;
 
@@ -59,7 +59,7 @@ function App() {
     });
 
     return (
-        <Router basename={basename}>
+        <Router>
             <div className="App container-fluid">
                 <div className="row">
                     <div className="side d-none d-md-block col-md-3 bg-acrylic pt-3 position-fixed">

@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "57961711846db8ea5e0c9fca1a60d6b8",
+    "revision": "357dd068b9e3817db56a78517c38a2ba",
     "url": "/et-design/index.html"
   },
   {
-    "revision": "58144580b67f6f1f7ca5",
-    "url": "/et-design/static/css/main.c1d7e0bc.chunk.css"
+    "revision": "3a41a8c8ed5f75a6788d",
+    "url": "/et-design/static/css/main.951eee83.chunk.css"
   },
   {
-    "revision": "f3bee5bbf2d68f2b40a0",
-    "url": "/et-design/static/js/2.4b2227ce.chunk.js"
+    "revision": "3561722f7e44ce3e2508",
+    "url": "/et-design/static/js/2.3b274e9b.chunk.js"
   },
   {
-    "revision": "58144580b67f6f1f7ca5",
-    "url": "/et-design/static/js/main.34f4aeb3.chunk.js"
+    "revision": "3a41a8c8ed5f75a6788d",
+    "url": "/et-design/static/js/main.04b2376b.chunk.js"
   },
   {
     "revision": "1cc710306c7531a16fa0",
@@ -100,8 +100,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/et-design/static/media/HKGrotesk-SemiBoldItalic.a715cbd8.woff"
   },
   {
-    "revision": "dec53c61d89042d38892ded2bb2e3c90",
-    "url": "/et-design/static/media/logo.dec53c61.svg"
+    "revision": "ed48986df343bea71e3e0bc909f5f995",
+    "url": "/et-design/static/media/logo.ed48986d.svg"
   },
   {
     "revision": "3c2058314ddcf74dfb4b900c5185df23",

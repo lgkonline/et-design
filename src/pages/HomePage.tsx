@@ -3,49 +3,49 @@ import React from "react";
 import { HorizontalScroll } from "../components/HorizontalScroll";
 
 export function HomePage() {
-    const recentWinnings = [
-        {
-            case: "https://so2.money/wp-content/uploads/2019/05/treasure2.png",
-            skin: "https://so2.money/wp-content/uploads/2019/07/cyber.png",
-            color: "rgb(158, 158, 158)"
-        },
-        {
-            case: "https://so2.money/wp-content/uploads/2019/05/treasure2.png",
-            skin: "https://so2.money/wp-content/uploads/2019/07/unikarambit.png",
-            color: "rgb(206, 170, 96)"
-        },
-        {
-            case: "https://so2.money/wp-content/uploads/2019/07/ASTROCASE.png",
-            skin: "https://so2.money/wp-content/uploads/2019/07/m40beag.png",
-            color: "rgb(158, 158, 158)"
-        },
-        {
-            case: "https://so2.money/wp-content/uploads/2019/07/testcase.png",
-            skin: "https://so2.money/wp-content/uploads/2019/06/SM1014NEC.png",
-            color: "rgb(33, 150, 243)"
-        },
-        {
-            case: "https://so2.money/wp-content/uploads/2019/07/ASTROCASE.png",
-            skin: "https://so2.money/wp-content/uploads/2019/07/Rail.png",
-            color: "rgb(156, 39, 176)"
-        },
-        {
-            case: "https://so2.money/wp-content/uploads/2019/05/treasure2.png",
-            skin: "https://so2.money/wp-content/uploads/2019/07/cyber.png",
-            color: "rgb(158, 158, 158)"
-        },
-        {
-            case: "https://so2.money/wp-content/uploads/2019/06/ak-dream.png",
-            skin: "https://so2.money/wp-content/uploads/2019/06/test4.png",
-            color: "rgb(244, 67, 54)"
-        }
-    ];
+    // const recentWinnings = [
+    //     {
+    //         case: "https://so2.money/wp-content/uploads/2019/05/treasure2.png",
+    //         skin: "https://so2.money/wp-content/uploads/2019/07/cyber.png",
+    //         color: "rgb(158, 158, 158)"
+    //     },
+    //     {
+    //         case: "https://so2.money/wp-content/uploads/2019/05/treasure2.png",
+    //         skin: "https://so2.money/wp-content/uploads/2019/07/unikarambit.png",
+    //         color: "rgb(206, 170, 96)"
+    //     },
+    //     {
+    //         case: "https://so2.money/wp-content/uploads/2019/07/ASTROCASE.png",
+    //         skin: "https://so2.money/wp-content/uploads/2019/07/m40beag.png",
+    //         color: "rgb(158, 158, 158)"
+    //     },
+    //     {
+    //         case: "https://so2.money/wp-content/uploads/2019/07/testcase.png",
+    //         skin: "https://so2.money/wp-content/uploads/2019/06/SM1014NEC.png",
+    //         color: "rgb(33, 150, 243)"
+    //     },
+    //     {
+    //         case: "https://so2.money/wp-content/uploads/2019/07/ASTROCASE.png",
+    //         skin: "https://so2.money/wp-content/uploads/2019/07/Rail.png",
+    //         color: "rgb(156, 39, 176)"
+    //     },
+    //     {
+    //         case: "https://so2.money/wp-content/uploads/2019/05/treasure2.png",
+    //         skin: "https://so2.money/wp-content/uploads/2019/07/cyber.png",
+    //         color: "rgb(158, 158, 158)"
+    //     },
+    //     {
+    //         case: "https://so2.money/wp-content/uploads/2019/06/ak-dream.png",
+    //         skin: "https://so2.money/wp-content/uploads/2019/06/test4.png",
+    //         color: "rgb(244, 67, 54)"
+    //     }
+    // ];
 
     return (
         <div>
             <h1 className="mt-4 mb-3">Home</h1>
 
-            <HorizontalScroll className="recent-win-list mb-3">
+            {/* <HorizontalScroll className="recent-win-list mb-3">
                 {recentWinnings.map((pick, index) =>
                     <div
                         key={index}
@@ -56,7 +56,7 @@ export function HomePage() {
                         <div className="recent-win-skin" style={{ backgroundImage: `url(${pick.skin})` }} />
                     </div>
                 )}
-            </HorizontalScroll>
+            </HorizontalScroll> */}
 
             <HorizontalScroll className="mb-3">
                 {[...Array(16)].map((j, i) => (
