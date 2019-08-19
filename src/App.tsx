@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import { HashRouter as Router, Route, NavLink } from "react-router-dom";
+import { HashRouter as Router, Route, NavLink, Redirect } from "react-router-dom";
 
 import { HomePage } from "./pages/HomePage";
-import { LoadingPage } from "./pages/LoadingPage";
-import { Loading2Page } from "./pages/Loading2Page";
+import { LoadingPage, LoadingDemo1, LoadingDemo2 } from "./pages/LoadingPage";
+import { StatusPage } from "./pages/StatusPage";
 import { CasesPage } from "./pages/CasesPage";
 
 function App() {
@@ -21,19 +21,19 @@ function App() {
         },
         {
             icon: {
-                normal: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z" /><path d="M9.17 15.5h5.64l1.14 3h2.09l-5.11-13h-1.86l-5.11 13h2.09l1.12-3zM12 7.98l2.07 5.52H9.93L12 7.98zM20 2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 18H4V4h16v16z" /></svg>,
-                active: <svg baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z" /><path d="M9.93 13.5h4.14L12 7.98zM20 2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-4.05 16.5l-1.14-3H9.17l-1.12 3H5.96l5.11-13h1.86l5.11 13h-2.09z" /></svg>
+                normal: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z" /><path d="M12 6c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6 2.69-6 6-6m0-2c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8z" /></svg>,
+                active: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" d="M24 24H0V0h24v24z" /><circle cx="12" cy="12" r="8" /></svg>
             },
-            label: "Loading 1",
+            label: "Loading",
             to: "/loading"
         },
         {
             icon: {
-                normal: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z" /><path d="M9.17 15.5h5.64l1.14 3h2.09l-5.11-13h-1.86l-5.11 13h2.09l1.12-3zM12 7.98l2.07 5.52H9.93L12 7.98zM20 2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 18H4V4h16v16z" /></svg>,
-                active: <svg baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z" /><path d="M9.93 13.5h4.14L12 7.98zM20 2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-4.05 16.5l-1.14-3H9.17l-1.12 3H5.96l5.11-13h1.86l5.11 13h-2.09z" /></svg>
+                normal: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M11 15h2v2h-2v-2zm0-8h2v6h-2V7zm.99-5C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z" /></svg>,
+                active: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z" /></svg>
             },
-            label: "Loading 2",
-            to: "/loading2"
+            label: "Status",
+            to: "/status"
         },
         {
             icon: {
@@ -97,8 +97,14 @@ function App() {
 
 
                             <Route exact path="/" component={HomePage} />
+
                             <Route path="/loading" component={LoadingPage} />
-                            <Route path="/loading2" component={Loading2Page} />
+                            <Route path="/loading" exact render={() => <Redirect to="/loading/1" />} />
+                            <Route path="/loading/1" component={LoadingDemo1} />
+                            <Route path="/loading/2" component={LoadingDemo2} />
+
+
+                            <Route path="/status" component={StatusPage} />
                             <Route path="/cases" component={CasesPage} />
                         </div>
                     </div>

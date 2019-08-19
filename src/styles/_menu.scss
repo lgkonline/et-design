@@ -56,3 +56,15 @@
         }
     }
 }
+
+.page-nav {
+    .et-nav-item {
+        display: inline-flex;
+        border-bottom: 3px solid transparent;
+        padding-bottom: calc(#{$spacer} - 3px);
+
+        &.active {
+            border-color: $primary;
+        }
+    }
+}
