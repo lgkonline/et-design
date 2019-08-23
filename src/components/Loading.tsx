@@ -4,8 +4,7 @@ import lottie from "lottie-web";
 
 export interface ILoadingProps {
     className?: string;
-    style?: React.CSSProperties
-    animation: string;
+    style?: React.CSSProperties;
 }
 export interface ILoadingState { }
 
@@ -19,7 +18,7 @@ export class Loading extends React.Component<ILoadingProps, ILoadingState> {
             renderer: "svg",
             loop: true,
             autoplay: true,
-            animationData: require(`../animation/loading${this.props.animation}.json`)
+            animationData: require(`../animation/loading.json`)
         });
     }
 

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { HashRouter as Router, Route, NavLink, Redirect } from "react-router-dom";
 
 import { HomePage } from "./pages/HomePage";
-import { LoadingPage, LoadingDemo1, LoadingDemo2 } from "./pages/LoadingPage";
+import { LoadingPage, LoadingSimulateNetwork, LoadingDemo } from "./pages/LoadingPage";
 import { StatusPage } from "./pages/StatusPage";
 import { CasesPage } from "./pages/CasesPage";
 
@@ -99,9 +99,9 @@ function App() {
                             <Route exact path="/" component={HomePage} />
 
                             <Route path="/loading" component={LoadingPage} />
-                            <Route path="/loading" exact render={() => <Redirect to="/loading/1" />} />
-                            <Route path="/loading/1" component={LoadingDemo1} />
-                            <Route path="/loading/2" component={LoadingDemo2} />
+                            <Route path="/loading" exact render={() => <Redirect to="/loading/network" />} />
+                            <Route path="/loading/network" component={LoadingSimulateNetwork} />
+                            <Route path="/loading/demo" component={LoadingDemo} />
 
 
                             <Route path="/status" component={StatusPage} />
