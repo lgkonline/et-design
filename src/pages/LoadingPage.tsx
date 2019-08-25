@@ -1,9 +1,9 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import { NavLink } from "react-router-dom";
 
 import { Loading } from "../components/Loading";
-import { Status } from "../components/Status";
+import { Page } from "../components/Page";
+import { fetchData, putSuccess } from "../Global";
 
 export function LoadingPage({ children }: { children: any }) {
     return (
@@ -21,52 +21,29 @@ export function LoadingPage({ children }: { children: any }) {
 }
 
 export function LoadingSimulateNetwork() {
-    const putStatus = (type: string, title: string, message: string) => {
-        const domElement: Element = document.getElementById("status") as Element;
-        ReactDOM.render(<Status
-            type={type}
-            title={title}
-            message={message}
-            onClose={() => ReactDOM.unmountComponentAtNode(domElement)}
-        />, domElement);
-    };
+    const fetchDataSuccess = () => {
+        fetchData("https://jsonplaceholder.typicode.com/todos/1")
+            .then(res => {
+                console.log("Got data");
+                console.log(res);
 
-    const startLoading = () => {
-        ReactDOM.render(<Loading />, document.getElementById("loading"));
-    };
-
-    const finishLoading = () => {
-        ReactDOM.unmountComponentAtNode(document.getElementById("loading") as Element);
-    };
-
-    const fetchData = () => {
-        startLoading();
-
-        setTimeout(() => {
-            finishLoading();
-        }, 2000);
-
-        fetch("https://jsonplaceholder.typicode.com/todods/1")
-            .then(res => res.json())
-            .then(data => console.log(data))
-            .catch(error => {
-                console.log("Error");
-                putStatus("danger", "Something went wrong", "Try not to cry");
+                putSuccess();
             });
     };
 
     const fetchDataFail = () => {
-        putStatus("danger", "Oh no 🙃", "You did it! You broke our app");
+        fetchData("https://jsonplaceholder.typicode.com/todoss/1")
+            .then(res => {
+                // Will fail
+                console.log(res);
+            });
     };
 
     return (
-        <div>
-            <button className="btn btn-outline-primary mt-3" onClick={fetchData}>Fetch data</button>
-            <button className="btn btn-outline-primary ml-2 mt-3" onClick={fetchDataFail}>Fetch data fails</button>
-
-            <div id="loading" />
-            <div id="status" />
-        </div>
+        <Page>
+            <button className="btn btn-outline-secondary mt-4" onClick={fetchDataSuccess}>Fetch data</button>
+            <button className="btn btn-outline-secondary ml-2 mt-4" onClick={fetchDataFail}>Fetch data fails</button>
+        </Page>
     );
 }
 

@@ -1,14 +1,29 @@
-.status {
+.status,
+.success {
     position: fixed;
-    left: $spacer;
-    right: $spacer;
     bottom: 6rem;
-    box-shadow: $box-shadow-lg;
 
     animation: appear .2s;
 
     &.disappear {
         animation: disappear 200ms forwards;
+    }
+}
+
+.status {
+    left: $spacer;
+    right: $spacer;
+    box-shadow: $box-shadow-lg;
+}
+
+.success {
+    width: 5rem;
+    left: 50%;
+    margin-left: -2.5rem;
+
+    svg {
+        width: 100%;
+        height: auto;
     }
 }
 

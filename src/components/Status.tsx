@@ -34,7 +34,7 @@ export class Status extends React.Component<StatusProps, StatusState> {
 
                     <div className="col-10 col-md-11 p-3">
                         <h4 className="mb-3">{this.props.title}</h4>
-                        <p>{this.props.message}</p>
+                        <p style={{ whiteSpace: "pre-wrap" }}>{this.props.message}</p>
                     </div>
                 </div>
             </div>
