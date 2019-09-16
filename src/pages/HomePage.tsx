@@ -58,13 +58,14 @@ export function HomePage() {
                 )}
             </HorizontalScroll> */}
 
-            <HorizontalScroll className="mb-3">
+            <HorizontalScroll className="mb-3 cases-scroll">
                 {[...Array(16)].map((j, i) => (
-                    <div key={i} className="bg-primary" style={{
-                        minWidth: "150px",
-                        height: "150px",
-                        border: "2px solid black"
-                    }} />
+                    <div
+                        key={i}
+                        className="cases-scroll-item"
+                    >
+                        <img src={require("../images/blue-ice.png")} alt="" />
+                    </div>
                 ))}
             </HorizontalScroll>
 

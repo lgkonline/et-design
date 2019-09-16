@@ -14,3 +14,48 @@
     display: flex;
     justify-content: flex-end;
 }
+
+
+$horizontal-scroll-body-size: 2000px;
+
+.cases-scroll .horizontal-scroll-body {
+    position: relative;
+    &::before,
+    &::after {
+        content: "";
+
+        position: absolute;
+        top: calc(50% - #{$horizontal-scroll-body-size}*.5);
+        width: $horizontal-scroll-body-size;
+        height: $horizontal-scroll-body-size;
+        background: radial-gradient($body-bg, transparent 50%);
+    }
+
+    &::before {
+        left: calc(#{$horizontal-scroll-body-size}*-.5);
+    }
+
+    &::after {
+        right: calc(#{$horizontal-scroll-body-size}*-.5);
+    }
+}
+
+
+$cases-scroll-item: 200px;
+
+.cases-scroll-item {
+    --size: 200px;
+    border: 1px solid $primary;
+    min-width: $cases-scroll-item;
+    height: $cases-scroll-item;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 60%;
+        position: relative;
+        z-index: 1;
+    }
+}
