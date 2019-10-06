@@ -22,7 +22,7 @@ export class Status extends React.Component<StatusProps, StatusState> {
                 <div className="row">
                     <div className="col-2 col-md-1 white-link-area">
                         <button
-                            className="btn btn-link p-3 svg-current-color"
+                            className="btn btn-link p-3"
                             onClick={() => {
                                 this.setState({ disappear: true });
                                 setTimeout(this.props.onClose, 200);

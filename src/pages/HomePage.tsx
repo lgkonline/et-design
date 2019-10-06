@@ -1,84 +1,60 @@
 import React from "react";
 
-import { HorizontalScroll } from "../components/HorizontalScroll";
+import { icons } from "../Global";
 
 export function HomePage() {
-    // const recentWinnings = [
-    //     {
-    //         case: "https://so2.money/wp-content/uploads/2019/05/treasure2.png",
-    //         skin: "https://so2.money/wp-content/uploads/2019/07/cyber.png",
-    //         color: "rgb(158, 158, 158)"
-    //     },
-    //     {
-    //         case: "https://so2.money/wp-content/uploads/2019/05/treasure2.png",
-    //         skin: "https://so2.money/wp-content/uploads/2019/07/unikarambit.png",
-    //         color: "rgb(206, 170, 96)"
-    //     },
-    //     {
-    //         case: "https://so2.money/wp-content/uploads/2019/07/ASTROCASE.png",
-    //         skin: "https://so2.money/wp-content/uploads/2019/07/m40beag.png",
-    //         color: "rgb(158, 158, 158)"
-    //     },
-    //     {
-    //         case: "https://so2.money/wp-content/uploads/2019/07/testcase.png",
-    //         skin: "https://so2.money/wp-content/uploads/2019/06/SM1014NEC.png",
-    //         color: "rgb(33, 150, 243)"
-    //     },
-    //     {
-    //         case: "https://so2.money/wp-content/uploads/2019/07/ASTROCASE.png",
-    //         skin: "https://so2.money/wp-content/uploads/2019/07/Rail.png",
-    //         color: "rgb(156, 39, 176)"
-    //     },
-    //     {
-    //         case: "https://so2.money/wp-content/uploads/2019/05/treasure2.png",
-    //         skin: "https://so2.money/wp-content/uploads/2019/07/cyber.png",
-    //         color: "rgb(158, 158, 158)"
-    //     },
-    //     {
-    //         case: "https://so2.money/wp-content/uploads/2019/06/ak-dream.png",
-    //         skin: "https://so2.money/wp-content/uploads/2019/06/test4.png",
-    //         color: "rgb(244, 67, 54)"
-    //     }
-    // ];
-
     return (
         <div>
-            <h1 className="mt-4 mb-3">Home</h1>
+            <article className="mb-5">
+                <h1 className="mt-4 mb-3 page-header">Trademarks</h1>
 
-            {/* <HorizontalScroll className="recent-win-list mb-3">
-                {recentWinnings.map((pick, index) =>
-                    <div
-                        key={index}
-                        className="recent-win position-relative"
-                        style={{ color: pick.color }}
-                    >
-                        <div className="recent-win-case" style={{ backgroundImage: `url(${pick.case})` }} />
-                        <div className="recent-win-skin" style={{ backgroundImage: `url(${pick.skin})` }} />
+                <div className="card-deck">
+                    <div className="card">
+                        <div className="card-body">
+                            <img src={require("../images/coin.svg")} className="img-fluid" style={{ maxHeight: "300px" }} alt="T-Coin" />
+                        </div>
+
+                        <div className="card-footer">
+                            <h5 className="card-title">T-Coin</h5>
+                            <a href={require("../images/coin.svg")} className="btn btn-outline-secondary" target="_blank" rel="noopener noreferrer">
+                                {icons.cloud_download_outlined} {"White SVG"}
+                            </a>
+                        </div>
                     </div>
-                )}
-            </HorizontalScroll> */}
+                    <div className="card">
 
-            <HorizontalScroll className="mb-3 cases-scroll">
-                {[...Array(16)].map((j, i) => (
-                    <div
-                        key={i}
-                        className="cases-scroll-item"
-                    >
-                        <img src={require("../images/blue-ice.png")} alt="" />
+                        <div className="card-body">
+                            <img src={require("../images/logo.svg")} className="card-img-top" alt="T-Coin" />
+                        </div>
+
+                        <div className="card-body" />
+
+                        <div className="card-footer">
+                            <h5 className="card-title">Logo</h5>
+                            <a href={require("../images/logo.svg")} className="btn btn-outline-secondary" target="_blank" rel="noopener noreferrer">
+                                {icons.cloud_download_outlined} {"White SVG"}
+                            </a>
+                        </div>
                     </div>
-                ))}
-            </HorizontalScroll>
-
-            <div className="row">
-                <div className="col-md-6">
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-
-Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet,</p>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-
-Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet,</p>
                 </div>
-            </div>
+            </article>
+
+            <article className="mb-5">
+                <h1 className="mt-4 mb-3 page-header">Web Theme (Bootstrap)</h1>
+                <p>
+                    We use <a href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer">Bootstrap</a> with a custom theme for our sites. The theme is saved at Colorganize.
+                </p>
+                <a href="https://colorganize.com/webTheme/52" className="btn btn-outline-secondary" target="_blank" rel="noopener noreferrer">
+                    {"Web Theme on Colorganize"} {icons.open_in_new}
+                </a>
+            </article>
+
+            <article>
+                <h1 className="mt-4 mb-3 page-header">Color palette</h1>
+                <div className="embed-responsive" style={{ height: "680px" }}>
+                    <iframe className="embed-responsive-item" title="Colorganize" src="https://colorganize.com/palette/84/widget" />
+                </div>
+            </article>
         </div>
     );
 }

@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e3124cd79a624cff30fdcca2f655a337",
+    "revision": "017e3d7711c511cd294d92d6831058f5",
     "url": "/et-design/index.html"
   },
   {
-    "revision": "36255f006382bd5b1c2e",
-    "url": "/et-design/static/css/main.4cd4bb1c.chunk.css"
+    "revision": "9f7e05446f906fb14756",
+    "url": "/et-design/static/css/main.2fccece7.chunk.css"
   },
   {
-    "revision": "902f6ab9522543cf3eec",
-    "url": "/et-design/static/js/2.6cf22a5c.chunk.js"
+    "revision": "4e9a1c016fa1393de19a",
+    "url": "/et-design/static/js/2.bdb7714b.chunk.js"
   },
   {
-    "revision": "36255f006382bd5b1c2e",
-    "url": "/et-design/static/js/main.b2dc59b2.chunk.js"
+    "revision": "9f7e05446f906fb14756",
+    "url": "/et-design/static/js/main.2ca8d4fa.chunk.js"
   },
   {
     "revision": "1cc710306c7531a16fa0",
@@ -102,6 +102,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "dce66792b852ca5aac6eb0dccce535e9",
     "url": "/et-design/static/media/blue-ice.dce66792.png"
+  },
+  {
+    "revision": "446e2a57df3061566c2448aaed334e91",
+    "url": "/et-design/static/media/coin.446e2a57.svg"
   },
   {
     "revision": "dec53c61d89042d38892ded2bb2e3c90",

@@ -70,3 +70,8 @@ body {
 
 @import "./menu";
 @import "./horizontal-scroll";
+
+.page-header {
+    border-bottom: 1px solid rgba($body-color, .1);
+    padding-bottom: $spacer;
+}
