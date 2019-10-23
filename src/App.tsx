@@ -73,7 +73,7 @@ function App() {
                 <div className="row">
                     <div className="side d-none d-md-block col-md-3 bg-acrylic pt-3 position-fixed">
                         <div className="offset-lg-3">
-                            <img src={require("./images/logo.svg")} alt="EasyTrade.bet" className="mx-3 mt-4 mb-3" style={{ maxWidth: "160px" }} />
+                            <img src={require("./images/logo.svg")} alt="EasyTrade.bet" className="mx-3 mt-4 mb-3" style={{ maxWidth: "128px" }} />
 
                             <nav className="et-nav menu-nav white-link-area">
                                 {navItems.map((navItem, index) =>

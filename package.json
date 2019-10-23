@@ -1,14 +1,15 @@
 {
   "name": "et-design",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "private": true,
-  "homepage": "https://lgkonline.github.io/et-design/",
+  "homepage": "https://design.easytrade.bet/",
   "dependencies": {
     "@types/jest": "^24.0.17",
     "@types/node": "^12.6.9",
     "@types/react": "^16.8.24",
     "@types/react-dom": "^16.8.5",
     "@types/react-router-dom": "^4.3.4",
+    "@types/reactstrap": "^8.0.6",
     "bootstrap": "^4.3.1",
     "lottie-web": "^5.5.7",
     "node-sass": "^4.12.0",
@@ -17,6 +18,7 @@
     "react-router": "^5.0.1",
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1",
+    "reactstrap": "^8.1.1",
     "typescript": "^3.5.3"
   },
   "scripts": {

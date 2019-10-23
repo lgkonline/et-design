@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/et-design/static/css/main.2fccece7.chunk.css",
-    "main.js": "/et-design/static/js/main.2ca8d4fa.chunk.js",
-    "main.js.map": "/et-design/static/js/main.2ca8d4fa.chunk.js.map",
-    "runtime~main.js": "/et-design/static/js/runtime~main.b6faef5e.js",
-    "runtime~main.js.map": "/et-design/static/js/runtime~main.b6faef5e.js.map",
-    "static/js/2.bdb7714b.chunk.js": "/et-design/static/js/2.bdb7714b.chunk.js",
-    "static/js/2.bdb7714b.chunk.js.map": "/et-design/static/js/2.bdb7714b.chunk.js.map",
-    "index.html": "/et-design/index.html",
-    "precache-manifest.23eb2922e67f58826fd987928ee0d8c6.js": "/et-design/precache-manifest.23eb2922e67f58826fd987928ee0d8c6.js",
-    "service-worker.js": "/et-design/service-worker.js",
-    "static/css/main.2fccece7.chunk.css.map": "/et-design/static/css/main.2fccece7.chunk.css.map",
-    "static/media/main.scss": "/et-design/static/media/website-bg.3c205831.jpg",
-    "static/media/blue-ice.png": "/et-design/static/media/blue-ice.dce66792.png",
-    "static/media/coin.svg": "/et-design/static/media/coin.446e2a57.svg",
-    "static/media/logo.svg": "/et-design/static/media/logo.dec53c61.svg"
+    "main.css": "/static/css/main.4f8e2c56.chunk.css",
+    "main.js": "/static/js/main.ccfed9f4.chunk.js",
+    "main.js.map": "/static/js/main.ccfed9f4.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/js/2.69642b89.chunk.js": "/static/js/2.69642b89.chunk.js",
+    "static/js/2.69642b89.chunk.js.map": "/static/js/2.69642b89.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.aa19c8a7cc35235edbe67dc4f7867b9f.js": "/precache-manifest.aa19c8a7cc35235edbe67dc4f7867b9f.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.4f8e2c56.chunk.css.map": "/static/css/main.4f8e2c56.chunk.css.map",
+    "static/media/main.scss": "/static/media/website-bg.3c205831.jpg",
+    "static/media/blue-ice.png": "/static/media/blue-ice.dce66792.png",
+    "static/media/coin.svg": "/static/media/coin.446e2a57.svg",
+    "static/media/logo.svg": "/static/media/logo.dec53c61.svg"
   }
 }

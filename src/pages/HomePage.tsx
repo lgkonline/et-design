@@ -1,12 +1,17 @@
 import React from "react";
 
 import { icons } from "../Global";
+import { DownloadDropdown } from "../components/DownloadDropdown";
 
 export function HomePage() {
     return (
         <div>
             <article className="mb-5">
                 <h1 className="mt-4 mb-3 page-header">Trademarks</h1>
+
+                <a href="https://adobe.ly/2WfjC68" className="btn btn-lg btn-outline-secondary mb-3" target="_blank" rel="noopener noreferrer">
+                    {icons.folder_shared} {"Explore all assets"}
+                </a>
 
                 <div className="card-deck">
                     <div className="card">
@@ -16,9 +21,46 @@ export function HomePage() {
 
                         <div className="card-footer">
                             <h5 className="card-title">T-Coin</h5>
-                            <a href={require("../images/coin.svg")} className="btn btn-outline-secondary" target="_blank" rel="noopener noreferrer">
-                                {icons.cloud_download_outlined} {"White SVG"}
-                            </a>
+
+
+                            <DownloadDropdown
+                                className="mr-2"
+                                icon={icons.format_shapes}
+                                label="Download SVG"
+                                links={[
+                                    {
+                                        href: "https://assets.adobe.com/public/1b13e2ea-235a-4406-6a09-762001075e51/trademarks/t-coin-icon/svg/black.svg",
+                                        label: "black.svg"
+                                    },
+                                    {
+                                        href: "https://assets.adobe.com/public/1b13e2ea-235a-4406-6a09-762001075e51/trademarks/t-coin-icon/svg/gold.svg",
+                                        label: "gold.svg"
+                                    },
+                                    {
+                                        href: "https://assets.adobe.com/public/1b13e2ea-235a-4406-6a09-762001075e51/trademarks/t-coin-icon/svg/white.svg",
+                                        label: "white.svg"
+                                    }
+                                ]}
+                            />
+
+                            <DownloadDropdown
+                                icon={icons.image}
+                                label="Download PNG"
+                                links={[
+                                    {
+                                        href: "https://assets.adobe.com/public/1b13e2ea-235a-4406-6a09-762001075e51/trademarks/t-coin-icon/png/black.png",
+                                        label: "black.png"
+                                    },
+                                    {
+                                        href: "https://assets.adobe.com/public/1b13e2ea-235a-4406-6a09-762001075e51/trademarks/t-coin-icon/png/gold.png",
+                                        label: "gold.png"
+                                    },
+                                    {
+                                        href: "https://assets.adobe.com/public/1b13e2ea-235a-4406-6a09-762001075e51/trademarks/t-coin-icon/png/white.png",
+                                        label: "white.png"
+                                    }
+                                ]}
+                            />
                         </div>
                     </div>
                     <div className="card">
@@ -31,9 +73,45 @@ export function HomePage() {
 
                         <div className="card-footer">
                             <h5 className="card-title">Logo</h5>
-                            <a href={require("../images/logo.svg")} className="btn btn-outline-secondary" target="_blank" rel="noopener noreferrer">
-                                {icons.cloud_download_outlined} {"White SVG"}
-                            </a>
+
+                            <DownloadDropdown
+                                className="mr-2"
+                                icon={icons.format_shapes}
+                                label="Download SVG"
+                                links={[
+                                    {
+                                        href: "https://assets.adobe.com/public/1b13e2ea-235a-4406-6a09-762001075e51/trademarks/logo/svg/black.svg",
+                                        label: "black.svg"
+                                    },
+                                    {
+                                        href: "https://assets.adobe.com/public/1b13e2ea-235a-4406-6a09-762001075e51/trademarks/logo/svg/gold.svg",
+                                        label: "gold.svg"
+                                    },
+                                    {
+                                        href: "https://assets.adobe.com/public/1b13e2ea-235a-4406-6a09-762001075e51/trademarks/logo/svg/white.svg",
+                                        label: "white.svg"
+                                    }
+                                ]}
+                            />
+
+                            <DownloadDropdown
+                                icon={icons.image}
+                                label="Download PNG"
+                                links={[
+                                    {
+                                        href: "https://assets.adobe.com/public/1b13e2ea-235a-4406-6a09-762001075e51/trademarks/logo/png/black.png",
+                                        label: "black.png"
+                                    },
+                                    {
+                                        href: "https://assets.adobe.com/public/1b13e2ea-235a-4406-6a09-762001075e51/trademarks/logo/png/gold.png",
+                                        label: "gold.png"
+                                    },
+                                    {
+                                        href: "https://assets.adobe.com/public/1b13e2ea-235a-4406-6a09-762001075e51/trademarks/logo/png/white.png",
+                                        label: "white.png"
+                                    }
+                                ]}
+                            />
                         </div>
                     </div>
                 </div>
